@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img clas="logo" src="images/math-curve-svgrepo-com.svg">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="#">Calculator</a></li>
+                <li><a href="#">Calculations Use</a></li>
+                <li><a href="#">Applications</a></li>
+            </ul>
+        </nav>
+        <a class="contact" href="#"><button>About</button></a>
+    </header>
+    <main>
+        <h1 class="main_title">Compound Interest  Calculator</h1>
+        <form class="Calculator">
+            <div class="amount">
+                <label for="principal_amount">Amount deposited</label>
+                 <br>
+                 <input type="text" id="principal_amount" name="principal_amount"><br>
+            </div>
+            <br>
+            <div class="n_years">
+                <label for="number_of_year">Number of years</label>
+                <br>
+                <input type="text" id="number_of_year" name="number_of_year">
+            </div>
+            <br>
+            <div class="interest_r">
+                <label for="rate">Interest Rate(enter without % sign)</label>
+                <br>
+                <input type="text" id="rate" name="rate">
+                <br>
+            </div>
+            <br>
+            <div class="rates">
+                <label for="rates_billing">Compound Interval</label>
+                <select name="rates_billing" id="rates_billing">
+                    <option value="1">Annually</option>
+                    <option value="4">Quarterly</option>
+                    <option value="2">Semiannually</option>
+                    <option value="12">Monthly</option>
+                </select>
+           </div>
+            <br>
+            <button type="submit" class="btn btn-primary" id="btnCompound" onclick="compoundInterest()">Submit</button>
+            <br>
+        </form>
+            <div class="Results">
+                <h1>Results:</h1>
+                <p class="lead mt-3" id="ciOutput-01"></p>
+                <p class="lead mb-3" id="ciOutput-02"></p>
+            </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
